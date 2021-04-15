@@ -17,7 +17,7 @@ library(shinythemes)
 
 # Define UI
 ui <- fluidPage(theme = shinytheme("cerulean"),
-                titlePanel("DNA sequence"),
+                titlePanel("RNA sequence translator"),
                   sidebarPanel(
                              tags$h3("Input:"),
                              textInput("txt1", "Enter a codon", "")
