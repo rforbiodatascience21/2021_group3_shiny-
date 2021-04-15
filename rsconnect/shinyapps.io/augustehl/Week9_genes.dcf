@@ -1,0 +1,14 @@
+name: Week9_genes
+title: Week9_genes
+username:
+account: augustehl
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3969713
+bundleId: 4474261
+url: https://augustehl.shinyapps.io/Week9_genes/
+when: 1618477310.35796
+lastSyncTime: 1618477310.35797
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: cancer_data_gravier.csv|README|RNA_to_protein_translator.R|shiny_app_group_3.R|sum_data.png

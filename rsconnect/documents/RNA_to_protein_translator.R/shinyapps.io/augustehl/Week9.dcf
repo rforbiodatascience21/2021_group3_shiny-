@@ -1,0 +1,14 @@
+name: Week9
+title: Week9
+username:
+account: augustehl
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3969703
+bundleId: 4474247
+url: https://augustehl.shinyapps.io/Week9/
+when: 1618477041.93148
+lastSyncTime: 1618477041.93149
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: app.R|cancer_data_gravier.csv|README|shiny_app_group_3.R|sum_data.png
