@@ -3,7 +3,8 @@
 #              Group 3             #
 ####################################
 
-#this is
+#this is a comment
+
 # Concepts about Reactive programming used by Shiny, 
 # https://shiny.rstudio.com/articles/reactivity-overview.html
 
