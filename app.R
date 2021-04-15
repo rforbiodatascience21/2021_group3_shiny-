@@ -11,7 +11,11 @@ library(shiny)
 library(shinythemes)
 library(tidyverse)
 # loading gravier data 
+<<<<<<< HEAD
 
+=======
+#setwd("~/Desktop/Universitet/DTU/Bioinformatik_og_System_Biologi/1.Semester/R_for_BioScience/2021_group3_shiny-")
+>>>>>>> d44fedda017ca21d206d9606810ac61aab0bb74f
 gravier_data <- read_csv("cancer_data_gravier.csv")
 
 # Define UI
