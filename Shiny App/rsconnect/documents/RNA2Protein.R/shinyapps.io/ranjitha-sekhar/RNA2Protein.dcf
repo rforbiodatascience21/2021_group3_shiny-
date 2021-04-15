@@ -1,0 +1,14 @@
+name: RNA2Protein
+title: RNA2Protein
+username:
+account: ranjitha-sekhar
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 3969694
+bundleId: 4474272
+url: https://ranjitha-sekhar.shinyapps.io/RNA2Protein/
+when: 1618477451.00639
+lastSyncTime: 1618477451.00639
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: README

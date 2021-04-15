@@ -18,20 +18,20 @@ library(shinythemes)
 # Define UI
 ui <- fluidPage(theme = shinytheme("cerulean"),
                 titlePanel("RNA sequence translator"),
-                  sidebarPanel(
-                             tags$h3("Input:"),
-                             textInput("txt1", "Enter a codon", "")
-                           ), # sidebarPanel
-                           mainPanel(
-                             h1("RNA to protein translator"),
-                             
-                             h4("Amino acid"),
-                             verbatimTextOutput("txtout"),
-                             
-                           ) # mainPanel
-                           
-                  )
- # fluidPage
+                sidebarPanel(
+                  tags$h3("Input:"),
+                  textInput("txt1", "Enter a codon", "")
+                ), # sidebarPanel
+                mainPanel(
+                  h1("RNA to protein translator"),
+                  
+                  h4("Amino acid"),
+                  verbatimTextOutput("txtout"),
+                  
+                ) # mainPanel
+                
+)
+# fluidPage
 
 
 # Define server function  
