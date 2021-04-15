@@ -10,6 +10,7 @@
 library(shiny)
 library(shinythemes)
 library(tidyverse)
+library(ggpubr)
 # loading gravier data 
 <<<<<<< HEAD
 
@@ -28,15 +29,20 @@ ui <- fluidPage(theme = shinytheme("cerulean"),
                                                  selectInput("gene2",
                                                              "Gene 2",
                                                              choices=colnames(gravier_data)),
-                                                 hr(),
                                                  helpText("Select two genes and get the pairwise
-                                                          correlation.")
-                                                 
-                ),
-                plotOutput("scatterplot")
-                ),
+                                                          correlation.")),
+                plotOutput("scatterplot")),
                 
-                tabPanel("PCA", "PCA-plot"),
+                tabPanel("Plot", "Plot",
+                         sidebarPanel(selectInput("gene3",
+                                                  "Gene: ",
+                                                  choices=colnames(gravier_data)),
+                                      selectInput("patient",
+                                                  "Patient ID",
+                                                  choices=rownames(gravier_data))),
+                         plotOutput("hist_plot")),
+                
+                
                 tabPanel("About", "Description:
                          Gravier et al. (2010) have considered small, invasive ductal
                          carcinomas without axillary lymph node involvement (T1T2N0)
@@ -59,7 +65,15 @@ server <- function(input, output) {
       theme_minimal() +
       theme(plot.title = element_text(size = 24))+ 
       labs(title = "Pairwise coreleation between expression levels of two genes")
+      plot1 + stat_cor(method = "pearson", label.x = 3, label.y = 30)
     plot(plot1) 
+    })
+  output$hist_plot <- renderPlot({
+    plot2 <- ggplot(data = gravier_data,
+                    mapping = aes_string(x = input$"patient",
+                                  y = input$"gene3")) +
+                      geom_point()
+    plot(plot2) 
     })
 }
 
