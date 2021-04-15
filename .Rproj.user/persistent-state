@@ -1,2 +1,15 @@
+<<<<<<< HEAD
+activeClientUrl="https://5cdb5f2f89ec436bb17fdbccff33a315.app.rstudio.cloud/"
+build-last-errors="[]"
+build-last-errors-base-dir=""
+build-last-outputs="[]"
+compile_pdf_state="{\"tab_visible\":false,\"running\":false,\"target_file\":\"\",\"output\":\"\",\"errors\":[]}"
+files.monitored-path=""
+find-in-files-state="{\"handle\":\"\",\"input\":\"\",\"path\":\"\",\"regex\":false,\"ignoreCase\":false,\"results\":{\"file\":[],\"line\":[],\"lineValue\":[],\"matchOn\":[],\"matchOff\":[],\"replaceMatchOn\":[],\"replaceMatchOff\":[]},\"running\":false,\"replace\":false,\"preview\":false,\"gitFlag\":false,\"replacePattern\":\"\"}"
+imageDirtyState="1"
+portToken="948ec9d0e1c0"
+saveActionState="-1"
+=======
 activeClientUrl="https://93092943f7c24c75a647a5184afcd6dd.app.rstudio.cloud/"
 portToken="5b026506a880"
+>>>>>>> d44fedda017ca21d206d9606810ac61aab0bb74f
