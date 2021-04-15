@@ -17,8 +17,8 @@ library(shinythemes)
 
 # Define UI
 ui <- fluidPage(theme = shinytheme("cerulean"),
-                navbarPage(tabPanel("Navbar 1",
-                           sidebarPanel(
+                titlePanel("DNA sequence"),
+                  sidebarPanel(
                              tags$h3("Input:"),
                              textInput("txt1", "Enter a codon", "")
                            ), # sidebarPanel
@@ -31,8 +31,7 @@ ui <- fluidPage(theme = shinytheme("cerulean"),
                            ) # mainPanel
                            
                   )
-                ) # navbarPage
-) # fluidPage
+ # fluidPage
 
 
 # Define server function  
